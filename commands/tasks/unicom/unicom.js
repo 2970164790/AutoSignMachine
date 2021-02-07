@@ -102,9 +102,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
-  await scheduler.regTask('dailyVideoScratchcard', async (request) => {
-    await require('./dailyVideoScratchcard').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyVideoScratchcard', async (request) => {
+   // await require('./dailyVideoScratchcard').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-赢三星Galaxy Z(试试手气)
   await scheduler.regTask('dailyCheapStorePage', async (request) => {
