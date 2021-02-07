@@ -77,19 +77,19 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费拿-看视频夺宝
-  // 易出现本次操作需要进行验证，暂时注释
-  // await scheduler.regTask('dailyVideoFreeGoods', async (request) => {
-  //   await require('./dailyVideoFreeGoods').doTask(request, options)
-  // }, {
-  //   isCircle: true,
-  //   startTime: 10 * 3600,
-  //   intervalTime: 4 * 3600
-  // })
+  //易出现本次操作需要进行验证，暂时注释
+   await scheduler.regTask('dailyVideoFreeGoods', async (request) => {
+     await require('./dailyVideoFreeGoods').doTask(request, options)
+   }, {
+     isCircle: true,
+     startTime: 10 * 3600,
+     intervalTime: 4 * 3600
+   })
 
   // 首页-签到有礼-免费抽-抓OPPO手机
-  await scheduler.regTask('dailyGrabdollPage', async (request) => {
-    await require('./dailyGrabdollPage').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyGrabdollPage', async (request) => {
+   // await require('./dailyGrabdollPage').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-拿666积分-豪礼大派送抽奖
   await scheduler.regTask('jflottery', async (request) => {
