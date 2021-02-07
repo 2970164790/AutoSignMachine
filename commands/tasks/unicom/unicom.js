@@ -97,9 +97,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-拿苹果iPad Pro(摇一摇)
-  await scheduler.regTask('dailyYYY', async (request) => {
-    await require('./dailyYYY').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyYYY', async (request) => {
+    //await require('./dailyYYY').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
   //await scheduler.regTask('dailyVideoScratchcard', async (request) => {
@@ -116,14 +116,14 @@ var start = async (params) => {
   })
 
   // 首页-签到有礼-免费抽-拆华为Pad(去抽奖)
-  await scheduler.regTask('dailyLKMH', async (request) => {
-    await require('./dailyLKMH').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyLKMH', async (request) => {
+    //await require('./dailyLKMH').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-拿iPhone12(摇一摇)
-  await scheduler.regTask('dailyYYQ', async (request) => {
-    await require('./dailyYYQ').doTask(request, options)
-  }, taskOption)
+  //await scheduler.regTask('dailyYYQ', async (request) => {
+    //await require('./dailyYYQ').doTask(request, options)
+ //}, taskOption)
 
   // 首页-签到有礼-免费抽-赢Apple Watch(去抽奖)
   await scheduler.regTask('dailyTurntablePage', async (request) => {
